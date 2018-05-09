@@ -9,14 +9,14 @@
   "test": {
     "username": "root",
     "password": null,
-    "database": "database_test",
+    "database": "burgers",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
-    "username": "fjgchk7ah0jicjyk",
-    "password": "vpam7ng5soi29v9d",
-    "database": "kku1983mds3ns9ij",
+    "username": "tkfyvy69xbn3yfxi",
+    "password": "c6hf8tsm45tspz1s",
+    "database": "slr5bcq0uvny74rd",
     "port": "3306",
     "host": "y2w3wxldca8enczv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
