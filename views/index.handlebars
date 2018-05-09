@@ -1,0 +1,47 @@
+<div class="wrapper">
+  <header class="header">
+<h1>Eat-Da-Burger!</h1>
+      
+  </header>
+  <article class="main">
+      <img src="./assets/images/burger.jpg">
+  </article>
+  <aside class="aside aside-1">    <div class="row">
+
+        <div class="col-sm-12">
+            <h2>Eat-Da-Burger!</h2>
+            {{#each burgers}} {{#unless this.devoured}}
+            <form id="update">
+                <input id="updateDev" type="hidden" name="devoured" value= {{this.id}}>
+                <button class="btn btn-danger" type="submit">Devour it!</button>
+                {{!-- <button class="delete-burger" data-id="{{this.id}}">DELETE!</button> --}}
+            </form>
+            <div class="well">
+                {{this.id}}. {{this.burger_name}}
+            </div>
+            {{/unless}} {{/each}}
+        </div>
+
+    </div></aside>
+  <aside class="aside aside-2">    <div class="row">
+        <div class="col-sm-12 dev" >
+            <h2>Devoured!</h2>
+            {{#each burgers}} {{#if this.devoured}}
+                <button class="btn btn-danger delete-burger" data-id="{{this.id}}">Complete!</button>
+            
+            <div class="well devoured">
+                {{this.id}}. {{this.burger_name}}
+                
+            </div>
+            {{/if}} {{/each}}
+        </div>
+
+    </div></aside>
+  <footer class="footer">    <h2>Place your order.</h2>
+
+    <form id="add" action="/burgers/add" method="POST">
+        <textarea name="burger_name"></textarea>
+        
+        <button class="btn btn-warning" type="submit">Submit</button>
+    </form></footer>
+</div>
