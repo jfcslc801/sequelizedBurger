@@ -3,7 +3,7 @@
 #### University of Utah Coding Bootcamp.  
 
 # Overview
-Eat-Da-Burger! is a burger logger created with MySQL, Node, Express, Handlebars and a homemade ORM. Followed the MVC design pattern; used Node and MySQL to query and route data in the app, and used Handlebars to generate the HTML.
+Eat-Da-Burger! is a burger logger created with MySQL, Node, Express, and Handlebars. Followed the MVC design pattern; used Node and MySQL to query and route data in the app, and used Handlebars to generate the HTML.
 
 
 # Getting Started
